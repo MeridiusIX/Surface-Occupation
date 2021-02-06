@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Factions>
+
+    <Faction Tag="INCON" Founder="Contractors">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>IndependentContractor</SubtypeId>
+      </Id>
+      <DisplayName>Independent Contractor</DisplayName>
+      <Description>Ships belonging to Independent Contractors follow no particular style or theme, since the pilots often own and operate these vessels. Contractors can be found on many planets and in outer space. Many of these contractors do not trust other factions and will become defensive if approached.</Description>
+      <IsDefault>true</IsDefault>
+      <DefaultRelation>Enemies</DefaultRelation>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+    </Faction>
+
+    <Faction Tag="IMBER" Founder="The Tribunal">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>ImberCorp</SubtypeId>
+      </Id>
+      <DisplayName>Imber Corporation</DisplayName>
+      <Description>The Imber Corporation is a large and well established organization, having a presence on many planets and in outer space. Imber has been criticized for its many territory expansion initiatives, which have forced other smaller colonies from areas they once resided within. This corp considers all other factions as a potential threat, and aggressively defends its property if provoked.</Description>
+      <IsDefault>true</IsDefault>
+      <DefaultRelation>Enemies</DefaultRelation>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+    </Faction>
+
+    <Faction Tag="PARALLAX" Founder="The Chairman">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>ParallaxConcepts</SubtypeId>
+      </Id>
+      <DisplayName>Parallax Concepts</DisplayName>
+      <Description>Parallax Concepts is a mid-sized organization that is established on several planets and in outer space. While they do not have large ambitions to conquer and expand, they don't respond kindly to those that are not affiliated with their faction and will attack if provoked.</Description>
+      <IsDefault>true</IsDefault>
+      <DefaultRelation>Enemies</DefaultRelation>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+    </Faction>
+
+  </Factions>
+</Definitions>

@@ -1,0 +1,673 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <!--=========== SMALL STATIONS ==============-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-DefenseInstallation</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+        [FactionOwner:IMBER]
+        [ReplenishSystems:true]
+        [ShiftBlockColorsHue:true]
+        [ShiftBlockColorAmount:200]
+        [AssignGridSkin:SciFi_Armor]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>5.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Defense Installation">
+          <Position>
+            <X>0.0</X>
+            <Y>7.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Defense Installation</BeaconText>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-DBSLookoutTower</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+        [FactionOwner:INCON]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>5.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) DBS Lookout Tower">
+          <Position>
+            <X>0.0</X>
+            <Y>15.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>DBS Lookout Tower</BeaconText>
+          <Behaviour>SurfaceOccupation-Behavior-Station</Behaviour>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-ScoutingOutpost</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+        [FactionOwner:IMBER]
+        [ReplenishSystems:true]
+        [ShiftBlockColorsHue:true]
+        [ShiftBlockColorAmount:200]
+        [AssignGridSkin:SciFi_Armor]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>2.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Scouting Outpost">
+          <Position>
+            <X>0.0</X>
+            <Y>10.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Scouting Outpost</BeaconText>
+          <Behaviour>SurfaceOccupation-Behavior-Station</Behaviour>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-Bunker</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+        [FactionOwner:PARALLAX]
+        [ReplenishSystems:true]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>2.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Bunker">
+          <Position>
+            <X>0.0</X>
+            <Y>8.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Bunker</BeaconText>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-DBSObservationOutpost</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+        [FactionOwner:INCON]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>2.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) DBS Observation Outpost">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>DBS Observation Outpost</BeaconText>
+          <Behaviour>SurfaceOccupation-Behavior-Station</Behaviour>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-FuelingStation</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+        [FactionOwner:PARALLAX]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>2.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Fueling Station">
+          <Position>
+            <X>0.0</X>
+            <Y>9.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Fueling Station</BeaconText>
+          <Behaviour>SurfaceOccupation-Behavior-Station</Behaviour>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-OreProcessingOutpost</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+        [FactionOwner:IMBER]
+        [ReplenishSystems:true]
+        [ShiftBlockColorsHue:true]
+        [ShiftBlockColorAmount:200]
+        [AssignGridSkin:SciFi_Armor]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>1.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Ore Processing Outpost">
+          <Position>
+            <X>0.0</X>
+            <Y>19.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Ore Processing Outpost</BeaconText>
+          <Behaviour>SurfaceOccupation-Behavior-Station</Behaviour>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-MilitaryInstallation</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+        [FactionOwner:PARALLAX]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>1.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Military Installation">
+          <Position>
+            <X>0.0</X>
+            <Y>10.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Military Installation</BeaconText>
+          <Behaviour>SurfaceOccupation-Behavior-Station</Behaviour>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-ExpeditionBasePod</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+        [FactionOwner:PARALLAX]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>1.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Expedition Base Pod">
+          <Position>
+            <X>0.0</X>
+            <Y>11.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Expedition Base Pod</BeaconText>
+          <Behaviour>SurfaceOccupation-Behavior-Station</Behaviour>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-SupplyCache1</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+        [FactionOwner:IMBER]
+        [ReplenishSystems:true]
+        [ShiftBlockColorsHue:true]
+        [ShiftBlockColorAmount:200]
+        [AssignGridSkin:SciFi_Armor]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>2.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Supply Cache 1">
+          <Position>
+            <X>0.0</X>
+            <Y>-14.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Supply Cache</BeaconText>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-SupplyCache2</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+        [FactionOwner:IMBER]
+        [ReplenishSystems:true]
+        [ShiftBlockColorsHue:true]
+        [ShiftBlockColorAmount:200]
+        [AssignGridSkin:SciFi_Armor]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>2.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Supply Cache 2">
+          <Position>
+            <X>0.0</X>
+            <Y>-14.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Supply Cache</BeaconText>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-SupplyCache3</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Small]
+        [FactionOwner:IMBER]
+        [ReplenishSystems:true]
+        [ShiftBlockColorsHue:true]
+        [ShiftBlockColorAmount:200]
+        [AssignGridSkin:SciFi_Armor]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>2.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Supply Cache 3">
+          <Position>
+            <X>0.0</X>
+            <Y>-14.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Supply Cache</BeaconText>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--=========== MEDIUM STATIONS ==============-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-FrontierOutpost</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Medium]
+        [FactionOwner:PARALLAX]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>4.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Frontier Outpost">
+          <Position>
+            <X>0.0</X>
+            <Y>12.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Frontier Outpost</BeaconText>
+          <Behaviour>SurfaceOccupation-Behavior-Station</Behaviour>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-TerritoryDefenseStation</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Medium]
+        [FactionOwner:IMBER]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [ShiftBlockColorsHue:true]
+        [ShiftBlockColorAmount:200]
+        [AssignGridSkin:SciFi_Armor]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>3.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Territory Defense Station">
+          <Position>
+            <X>0.0</X>
+            <Y>36.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Territory Defense Station</BeaconText>
+          <Behaviour>SurfaceOccupation-Behavior-Station</Behaviour>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-ResourceProcessingStation</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Medium]
+        [FactionOwner:IMBER]
+        [ReplenishSystems:true]
+        [ShiftBlockColorsHue:true]
+        [ShiftBlockColorAmount:200]
+        [AssignGridSkin:SciFi_Armor]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>2.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Resource Processing Station">
+          <Position>
+            <X>0.0</X>
+            <Y>60.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Resource Processing Station</BeaconText>
+          <Behaviour>SurfaceOccupation-Behavior-Station</Behaviour>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-FighterDockingStation</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Medium]
+        [FactionOwner:IMBER]
+        [ReplenishSystems:true]
+        [ShiftBlockColorsHue:true]
+        [ShiftBlockColorAmount:200]
+        [AssignGridSkin:SciFi_Armor]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>1.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Fighter Docking Station">
+          <Position>
+            <X>0.0</X>
+            <Y>45.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Fighter Docking Station</BeaconText>
+          <Behaviour>SurfaceOccupation-Behavior-Station</Behaviour>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--=========== LARGE STATIONS ==============-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-FortressTower</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+        [PlanetaryInstallation:true]
+        [PlanetaryInstallationType:Large]
+        [FactionOwner:IMBER]
+        [ReplenishSystems:true]
+        [ShiftBlockColorsHue:true]
+        [ShiftBlockColorAmount:200]
+        [AssignGridSkin:SciFi_Armor]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [ReplaceArmorBlocksWithModules:true]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Drill-Large]
+        [ModulesForArmorReplacement:MyObjectBuilder_RadioAntenna/MES-Suppressor-Jetpack-Large]
+
+      </Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>1.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Fortress Tower">
+          <Position>
+            <X>0.0</X>
+            <Y>38.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Fortress Tower</BeaconText>
+          <Behaviour>SurfaceOccupation-Behavior-Station</Behaviour>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--=========== DRONES ==============-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>SurfaceOccupation-SpawnGroup-AtmosphericFighter</SubtypeId>
+      </Id>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <Frequency>1.0</Frequency>
+      <IsPirate>true</IsPirate>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-SOC) Atmospheric Fighter">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <BeaconText>Atmospheric Fighter</BeaconText>
+          <Speed>0.0</Speed>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>
+
